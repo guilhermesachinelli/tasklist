@@ -23,7 +23,6 @@ class TaskList {
             }
         });
     }
-    //criar um metodo que alterar o valor do obj e tbm a cor
 }
 function randonId() {
     return Math.floor(Math.random() * 9999);
@@ -37,6 +36,9 @@ function createTask() {
     document.getElementById("new-task").value = "";
     showTask();
     completTask;
+    if(!tittle){
+        return document.getElementById("taskEmpty").classList.remove("hidden")
+    }
 }
 function showTask() {
     let showContent = '';
