@@ -13,28 +13,29 @@
     border-radius: 6px;
     margin-top: 21vh;
     margin-left: 26.5vw;
-    position: relative;
     padding-bottom: 1vh;
 }
 
 #new-task {
-    margin-top: 8vh;
-    margin-bottom: 10vh;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
     width: 40rem;
     height: 8vh;
     border-radius: 8px;
     border: none;
     background-color: rgb(236, 236, 236);
     padding-left: 1vw;
+    font-size: 20px;
 }
 
-#butt1 {
+#createTask {
     padding: 2rem;
     border-radius: 8px;
     border: none;
     margin-left: 0.5vw;
+    cursor: pointer;
 }
-#butt1:hover{
+#createTask:hover{
     background-color: bisque;
 }
 body {
@@ -48,9 +49,12 @@ h5 {
     position: absolute;
     margin-left: 7vh;
     margin-top: 4vh;
-
+    font-size: 20px;
 }
-#postContainner{
+.hidden{
+    display: none;
+}
+#postlist{
     margin: 0.25rem;
     width: 47rem;
     border-radius: 8px;
