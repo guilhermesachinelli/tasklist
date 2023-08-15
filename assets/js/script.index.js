@@ -35,9 +35,6 @@ function createTask() {
     const task = new Task(randonId(), title, false)
     taskList.addTask(task);
     document.getElementById("new-task").value = "";
-    if (tittle === '') {
-        return document.getElementById("taskEmpty").classList.remove("hidden")
-    }
     showTask();
     completTask;
 }
