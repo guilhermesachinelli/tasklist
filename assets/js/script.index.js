@@ -17,6 +17,7 @@ class TaskList {
         taskList.tasks.forEach((task, tasks) => {
             if(tasks != true){
                 this[task.status] = true
+                return document.getElementById("completTask").classList.add("green")
             }else{
                 this[task.status] = false
             }
@@ -34,11 +35,11 @@ function createTask() {
     const task = new Task(randonId(), title, false)
     taskList.addTask(task);
     document.getElementById("new-task").value = "";
-    showTask();
-    completTask;
     if (tittle === '') {
         return document.getElementById("taskEmpty").classList.remove("hidden")
     }
+    showTask();
+    completTask;
 }
 function showTask() {
     let showContent = '';
@@ -47,9 +48,9 @@ function showTask() {
         <div id="postlist">
             <div class="postContainner">
                 <p>${task.tittle}</p>
-                <button id="completTask" onclick="completTask(${index})"><i class="fa-solid fa-check"></i></button>
-                <button id="editTask" onclick="editTask(${index})" class=""><i class="fa-solid fa-pen"></i></button>
-                <button id="removeTask" onclick="removeTask(${index})"><i class="fa-solid fa-trash"></i></button>
+                <button id="completTask" class="completbutton" onclick="completTask(${index})"><i class="fa-solid fa-check"></i></button>
+                <button id="editTask" class="editbutton" onclick="editTask(${index})" class=""><i class="fa-solid fa-pen"></i></button>
+                <button id="removeTask" class="removebutton" onclick="removeTask(${index})"><i class="fa-solid fa-trash"></i></button>
             </div>
             </div>
         `;
