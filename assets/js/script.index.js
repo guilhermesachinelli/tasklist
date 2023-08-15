@@ -14,13 +14,15 @@ class TaskList {
         this.tasks.push(task)
     }
     completTask(){
-        taskList.tasks.forEach((task, index) => {
-            if(task = index){
-                this.status = true;
+        taskList.tasks.forEach((task, tasks) => {
+            if(tasks != true){
+                this[task.status] = true
+            }else{
+                this[task.status] = false
             }
         });
     }
-    //criar um metodo que alterar o valor do obj e tbm a cor do css
+    //criar um metodo que alterar o valor do obj e tbm a cor
 }
 function randonId() {
     return Math.floor(Math.random() * 9999);
@@ -62,9 +64,6 @@ function removeTask(index) {
     taskList.tasks.splice(index, 1);
     showTask();
 }
-function completTask(index) {
-    const complet = taskList.tasks[index].tittle;
-    if(complet == false){
-        status : true;
-    }
+function completTask() {
+    taskList.completTask()
 }
