@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#taskList{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 45vw;
+    border-radius: 6px;
+    margin-top: 21vh;
+    margin-left: 26.5vw;
+    position: relative;
+    padding-bottom: 1vh;
+}
+
+#new-task {
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+    width: 40rem;
+    height: 8vh;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding-left: 1vw;
+}
+
+#butt1 {
+    padding: 2rem;
+    border-radius: 8px;
+    border: none;
+    margin-left: 0.5vw;
+}
+#butt1:hover{
+    background-color: bisque;
+}
+body {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(228, 225, 223);
+}
+h5 {
+    color: red;
+    position: absolute;
+    margin-left: 7vh;
+    margin-top: 4vh;
+
+}
+#postContainner{
+    margin: 0.25rem;
+    width: 47rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding-left: 1vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    margin-bottom: 4vh;
+}
+#postContant{
+    margin-right: 28.5vw;
+}
+
+#buttons button{
+    border-radius: 100px;
+    padding: 1rem;
+    margin-left: 0.5vw;
+    cursor: pointer;
+    border: none;
+}
+#completTask{
+    background-color: #fff;
+}
+#editTask{
+    background-color: blue;
+}
+#removeTask{
+    background-color: red;
+}
+#buttons{
+    display: flex;
+}
