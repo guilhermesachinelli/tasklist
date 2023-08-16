@@ -95,16 +95,23 @@ h5 {
     background-color: green;
 }
 .completbutton{
-    padding: 1rem;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    margin: 1rem;
 }
 .editbutton{
-    padding: 1rem;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    margin: 1rem;
 }
 .postContainner{
     display: flex;
 }
 .removebutton{
-    padding: 1rem;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    margin: 1rem;
+    margin-right: 3rem;
 }
 .postContainner p {
     margin-right: 33rem;
